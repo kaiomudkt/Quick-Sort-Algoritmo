@@ -1,6 +1,6 @@
 public class QuickSort {
     public static void main(String[] args) {
-        int vetor[] = {5,4,3,2,1};
+        int vetor[] = {7,6,5,5,4,3,2,5,1};
         quickSort(vetor, 0, vetor.length-1);
         for (int i = 0; i < vetor.length; i++) {
             System.out.print(vetor[i]+", ");
@@ -24,7 +24,7 @@ public class QuickSort {
             while (a[i] < pivot){
                 i++;
             }
-            while(a[j] < pivot){
+            while(a[j] > pivot){
                 j--;
             }
             if (i<=j) {
